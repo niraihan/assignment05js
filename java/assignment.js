@@ -147,4 +147,8 @@ document.getElementById('btn-completed6').addEventListener('click',function(){
 
         container.appendChild(p);
 })
+document.getElementById('btn-clear').addEventListener('click',function(){
+    document.getElementById('log-container').innerText ="";
+})
+
 
