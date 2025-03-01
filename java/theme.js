@@ -12,8 +12,8 @@ const themes = [
 let currentThemeIndex = 0;
 
 button.addEventListener("click",function () {
-    document.body.className = `transition-all duration-500 ${themes[currentThemeIndex].bg} ${themes[currentThemeIndex].text}`;
-    button.className = `w-16 h-16 rounded-full transition-all duration-500 ${themes[currentThemeIndex].border}`;
+    document.body.className = `transition-all duration-500 ${themes[currentThemeIndex].bg} }`;
+    
 
     currentThemeIndex = (currentThemeIndex + 1) % themes.length;
 });
