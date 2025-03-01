@@ -1,7 +1,7 @@
 // theme Button
 const button = document.getElementById("btn-theme");
 const themes = [
-    { bg: "bg-white" },
+    { bg: "bg-teal-500" },
     { bg: "bg-gray-800" },
     { bg: "bg-blue-500" },
     { bg: "bg-green-500"   },

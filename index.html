@@ -12,17 +12,17 @@
 
 </head>
 
-<body class=" transition-all duration-500">
+<body class="">
 <section class="max-w-screen-xl mx-auto">
     <header>
         <!-- Nav Section -->
-        <nav class="flex justify-between">
+        <nav class="flex justify-between  rounded-xl p-2 bg-white">
             <div class="flex items-center">
                 <img class="w-10" src="./assets/logo.png" alt="">
                 <h4>Dev<span class="text-xl font-bold">Board</span></h4>
             </div>
             <div class="flex gap-5">
-                <div class="flex items-center bg-[#F4F7FF] rounded-xl p-3">
+                <div class="flex gap-2 items-center bg-[#F4F7FF] rounded-xl p-2">
                     <!-- <i class="fa-solid fa-square-check" style="color: #4d1be4;"></i> -->
                     <img src="./assets/checkbox.png" alt="">
                     <h3 id="nav-text" class="text-2xl font-bold">22</h3>
@@ -31,8 +31,8 @@
                     <img src="./assets/theme-btn.png" alt="">
                 </div> -->
                 <div class="bg-[#F4F7FF] p-1 rounded-full">
-                    <button id="btn-theme" class=" rounded-full border-gray-300 transition-all duration-500">
-                        <img src="./assets/theme-btn.png" alt="">
+                    <button id="btn-theme" class=" rounded-full border-gray-300 ">
+                        <img class="w-16 h-16" src="./assets/theme-btn.png" alt="">
                     </button>
                 </div>
             </div>
@@ -48,9 +48,9 @@
                     <div class="flex p-5 items-center gap-5 rounded-2xl bg-[#F4F7FF]">
                         <img src="./assets/checkbox.png" alt="">
                         <!-- <i class="fa-solid fa-square-check" style="color: #4d1be4;"></i> -->
-                        <div class="text-2xl font-bold">
-                            <p>Task Assigned</p>
-                            <h4 id="task-number">06</h4>
+                        <div >
+                            <p class="text-xl ">Task Assigned</p>
+                            <h4 class="text-xl font-bold" id="task-number">06</h4>
                         </div>
                     </div>
                     <!--Small card 2 -->
@@ -62,7 +62,7 @@
                     <!-- Small Card 3 -->
                     <div class="flex gap-3 items-start  p-5 rounded-2xl  bg-[#F4F7FF]">
                         <div class=""><img src="./assets/calender.png" alt=""> </div>
-                        <div id="date" class="text-xl font-bold">
+                        <div id="date" class="text-xl font-semibold">
                             <!-- <h4>Wed <br> Jul 28 2025 </h4> -->
                         </div>
                     </div>
