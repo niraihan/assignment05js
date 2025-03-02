@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="max-w-screen-xl mx-auto">
     <section>
         <nav class="flex justify-between">
@@ -14,62 +16,81 @@
                 <img class="w-10" src="./assets/logo.png" alt="">
                 <h4>Dev<span class="text-xl font-bold">Board</span></h4>
             </div>
-           <div>
-            <button id="btn-back" onclick="goBack()" class="btn btn-lg btn-primary">Back to Desk</button>
-           </div>
+            <div>
+                <button id="btn-back" onclick="goBack()" class="btn btn-lg btn-primary">Back to Desk</button>
+            </div>
         </nav>
         <main class="mt-10 flex flex-col gap-7">
             <h2 class="text-3xl font-bold text-center">Blogs</h2>
             <div>
-                <h3 class="text-2xl font-medium">Question-1: What are the different ways to select an element in the DOM?</h3>
-                <p class="py-3">DOM(Document Object Model) দিয়ে এলিম্যান্ট নির্বাচন করা যায় বিভিন্ন পদ্ধতিতে,তার মধ্যে উল্লেখ যোগ্য | 
-                    <ol> 
+                <h3 class="text-2xl font-medium">Question-1: What are the different ways to select an element in the
+                    DOM?</h3>
+                <div class="bg-yellow-100">
+                    <p class="py-3">DOM(Document Object Model) দিয়ে এলিম্যান্ট নির্বাচন করা যায় বিভিন্ন পদ্ধতিতে,তার
+                        মধ্যে
+                        উল্লেখ যোগ্য |
+                    <ol>
                         <li>1:-getElementById() </li>
                         <li>2:getElementsByClassName()</li>
                         <li>3:getElementsByTagName()</li>
                         <li>4:querySelector()</li>
                         <li>5:querySelectorAll() </li>
                     </ol>
-                    
-                </p>
+
+                    </p>
+                </div>
             </div>
             <div>
-                <h3 class="text-2xl font-medium">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
-                <p class="py-3">innerHTML → HTML কোডসহ সম্পূর্ণ কনটেন্ট পায় বা সেট করে
-                    এটি HTML ট্যাগসহ কনটেন্ট ফেরত দেয় এবং HTML রেন্ডার করে।
-                    নতুন HTML ট্যাগ সেট করলে তা ডাইনামিকভাবে পার্স ও এক্সিকিউট হয়।</p>
-                    <p>innerText → শুধু দৃশ্যমান (visible) টেক্সট পায় বা সেট করে
+                <h3 class="text-2xl font-medium">Question-2: What is the difference between innerHTML, innerText, and
+                    textContent ?</h3>
+                <div class="bg-yellow-100">
+                    <p class="py-3">innerHTML → HTML কোডসহ সম্পূর্ণ কনটেন্ট পায় বা সেট করে
+                        এটি HTML ট্যাগসহ কনটেন্ট ফেরত দেয় এবং HTML রেন্ডার করে।
+                        নতুন HTML ট্যাগ সেট করলে তা ডাইনামিকভাবে পার্স ও এক্সিকিউট হয়।</p>
+                    <p class="py-3">innerText → শুধু দৃশ্যমান (visible) টেক্সট পায় বা সেট করে
                         এটি শুধু দৃশ্যমান টেক্সট রিটার্ন করে, HTML ট্যাগ উপেক্ষা করে।</p>
-                        <p>textContent → সব টেক্সট পায়, Hidden এলিমেন্টসহ
-                            এটি HTML ট্যাগ বাদ দিয়ে সম্পূর্ণ টেক্সট ফেরত দেয়।
-                            Hidden (display: none;) এলিমেন্টের টেক্সটও পাওয়া যায়।</p>
+                    <p class="py-3">textContent → সব টেক্সট পায়, Hidden এলিমেন্টসহ
+                        এটি HTML ট্যাগ বাদ দিয়ে সম্পূর্ণ টেক্সট ফেরত দেয়।
+                        Hidden (display: none;) এলিমেন্টের টেক্সটও পাওয়া যায়।</p>
+                </div>
             </div>
             <div>
                 <h3 class="text-2xl font-medium">Question-3: What is event delegation in the DOM?</h3>
-                <p class="py-3">Event Delegation হলো একটি মূল parent এলিমেন্টে ইভেন্ট লিসেনার যোগ করা, যাতে তার(child) এলিমেন্টগুলোর ইভেন্ট পরিচালনা করা যায়।
+               <div class="bg-yellow-100">
+                <p class="py-3">Event Delegation হলো একটি মূল parent এলিমেন্টে ইভেন্ট লিসেনার যোগ করা, যাতে তার(child)
+                    এলিমেন্টগুলোর ইভেন্ট পরিচালনা করা যায়।
 
-                    এটি Event Bubbling এর উপর নির্ভর করে যেখানে একটি ইভেন্ট শুরুতে নির্দিষ্ট এলিমেন্টে ঘটে, তারপর তার প্যারেন্ট এলিমেন্টে বাবল আপ হয়।</p>
+                    এটি Event Bubbling এর উপর নির্ভর করে যেখানে একটি ইভেন্ট শুরুতে নির্দিষ্ট এলিমেন্টে ঘটে, তারপর তার
+                    প্যারেন্ট এলিমেন্টে বাবল আপ হয়।</p>
+               </div>
             </div>
             <div>
                 <h3 class="text-2xl font-medium">Question-4: What is event bubbling in the DOM?</h3>
-                <p class="py-3">Event Bubbling হলো একটি ইভেন্ট যখন কোনো চাইল্ড এলিমেন্টে ঘটে, তখন সেটি প্যারেন্ট এলিমেন্টের দিকেও ছড়িয়ে পড়ে (bubble up করে)। এটি DOM ইভেন্ট Propagation একটি অংশ, যেখানে একটি ইভেন্ট প্রথমে যেই এলিমেন্টে ঘটে, সেখান থেকে তার প্যারেন্ট, গ্র্যান্ডপ্যারেন্ট হয়ে document পর্যন্ত ছড়িয়ে যায়।</p>
+                <p class="py-3 bg-yellow-100">Event Bubbling হলো একটি ইভেন্ট যখন কোনো চাইল্ড এলিমেন্টে ঘটে, তখন সেটি প্যারেন্ট
+                    এলিমেন্টের দিকেও ছড়িয়ে পড়ে (bubble up করে)। এটি DOM ইভেন্ট Propagation একটি অংশ, যেখানে একটি ইভেন্ট
+                    প্রথমে যেই এলিমেন্টে ঘটে, সেখান থেকে তার প্যারেন্ট, গ্র্যান্ডপ্যারেন্ট হয়ে document পর্যন্ত ছড়িয়ে
+                    যায়।</p>
             </div>
             <div>
-                <h3 class="text-2xl font-medium">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                <h3 class="text-2xl font-medium">Question-5: How do you create, add, and remove elements using
+                    JavaScript?</h3>
+               <div class="bg-yellow-100">
                 <p class="py-3">জাভাস্ক্রিপ্ট দিয়ে এলিমেন্ট তৈরি, যোগ এবং সরানোর উপায়
                     <ol>
                         <li>createElement</li>
                         <li>appendChild</li>
                         <li>removeChild</li>
                         <li>remove</li>
-                        
+    
                     </ol>
-                </p>
+                    </p>
+               </div>
             </div>
         </main>
 
     </section>
-    
+
     <script src="./java/assignment.js"></script>
 </body>
+
 </html>
